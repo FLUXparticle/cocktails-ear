@@ -1,0 +1,449 @@
+<cocktails>
+  <ingredient id="0" name="Barsirup Mandel"></ingredient>
+  <ingredient id="1" name="Sahne"></ingredient>
+  <ingredient id="2" name="Orangensaft"></ingredient>
+  <ingredient id="3" name="Maracujanektar"></ingredient>
+  <ingredient id="4" name="Fruchtsirup Mandarine"></ingredient>
+  <ingredient id="5" name="Kirschnektar"></ingredient>
+  <ingredient id="6" name="Birnennektar"></ingredient>
+  <ingredient id="7" name="Fruchtsirup Preiselbeere"></ingredient>
+  <ingredient id="8" name="Pfirsichnektar"></ingredient>
+  <ingredient id="9" name="Ananassaft"></ingredient>
+  <ingredient id="10" name="Barsirup Blue Curacao"></ingredient>
+  <ingredient id="11" name="Fruchtsirup Banane"></ingredient>
+  <ingredient id="12" name="Barsirup Erdbeere"></ingredient>
+  <ingredient id="13" name="Mangonektar"></ingredient>
+  <ingredient id="14" name="Grenadine"></ingredient>
+  <ingredient id="15" name="Bananennektar"></ingredient>
+  <ingredient id="16" name="Fruchtsirup Guave"></ingredient>
+  <ingredient id="17" name="Zitronensaft"></ingredient>
+  <ingredient id="18" name="Preiselbeernektar"></ingredient>
+  <ingredient id="19" name="Eigelb"></ingredient>
+  <ingredient id="20" name="Fruchtsirup Mango"></ingredient>
+  <ingredient id="21" name="Fruchtsirup Ananas"></ingredient>
+  <ingredient id="22" name="Fruchtsirup Maracuja"></ingredient>
+  <ingredient id="23" name="Barsirup Kokos"></ingredient>
+  <ingredient id="24" name="Roter-Traubensaft"></ingredient>
+  <ingredient id="25" name="Schwarzer-Johannisbeer-Nektar"></ingredient>
+  <ingredient id="26" name="Erdbeeren"></ingredient>
+  <ingredient id="27" name="Fruchtsirup Kokos"></ingredient>
+  <ingredient id="28" name="Milch"></ingredient>
+  <ingredient id="29" name="Vanilleeis"></ingredient>
+  <ingredient id="30" name="Buttermilch"></ingredient>
+  <ingredient id="31" name="Sangrita Classic"></ingredient>
+  <ingredient id="32" name="Barsirup Gin"></ingredient>
+  <ingredient id="33" name="Grapefruitsaft"></ingredient>
+  <ingredient id="34" name="Barsirup Pfefferminze"></ingredient>
+  <ingredient id="35" name="Pfeffer"></ingredient>
+  <ingredient id="36" name="Salz"></ingredient>
+  <ingredient id="37" name="Tabasco"></ingredient>
+  <ingredient id="38" name="Worcestershiresauce"></ingredient>
+  <ingredient id="39" name="Tomatensaft"></ingredient>
+  <ingredient id="40" name="Fruchtsirup Limette"></ingredient>
+  <ingredient id="41" name="Barsirup Amarenakirsche"></ingredient>
+  <ingredient id="42" name="Sodawasser"></ingredient>
+  <ingredient id="43" name="Erdbeermus"></ingredient>
+  <ingredient id="44" name="Barsirup Rum"></ingredient>
+  <ingredient id="45" name="Mineralwasser mit Kohlensäure"></ingredient>
+  <ingredient id="46" name="Barsirup London Dry"></ingredient>
+  <ingredient id="47" name="Barsirup Cranberry"></ingredient>
+  <ingredient id="48" name="Bitter Lemon"></ingredient>
+  <ingredient id="49" name="Fruchtsirup Aprikose"></ingredient>
+  <ingredient id="50" name="Apfelsaft"></ingredient>
+  <ingredient id="51" name="Schweppes Bitter Orange"></ingredient>
+  <ingredient id="52" name="Tonic Water"></ingredient>
+  <ingredient id="53" name="Ginger Ale"></ingredient>
+  <cocktail id="0" name="Orange Velvet">
+    <instruction cl="2" ingredient="0"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="3"></instruction>
+  </cocktail>
+  <cocktail id="1" name="Mandarinetto">
+    <instruction cl="2" ingredient="4"></instruction>
+    <instruction cl="8" ingredient="5"></instruction>
+    <instruction cl="8" ingredient="6"></instruction>
+  </cocktail>
+  <cocktail id="2" name="Summerfeeling">
+    <instruction cl="2" ingredient="7"></instruction>
+    <instruction cl="8" ingredient="8"></instruction>
+    <instruction cl="8" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="3" name="Green Banana">
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="2" ingredient="11"></instruction>
+    <instruction cl="16" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="4" name="Strawberry Kiss">
+    <instruction cl="2" ingredient="12"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="6" ingredient="3"></instruction>
+    <instruction cl="6" ingredient="13"></instruction>
+    <instruction cl="6" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="5" name="Green Widow">
+    <instruction cl="1" ingredient="11"></instruction>
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="16" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="6" name="Evening Sun">
+    <instruction cl="2" ingredient="14"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="16" ingredient="15"></instruction>
+  </cocktail>
+  <cocktail id="7" name="Highway Patrol">
+    <instruction cl="2" ingredient="16"></instruction>
+    <instruction cl="8" ingredient="9"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="8" name="Andrea">
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="2" ingredient="0"></instruction>
+    <instruction cl="2" ingredient="17"></instruction>
+    <instruction cl="14" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="9" name="Summer Fun">
+    <instruction cl="8" ingredient="18"></instruction>
+    <instruction cl="6" ingredient="8"></instruction>
+    <instruction cl="6" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="10" name="Florida Flip">
+    <instruction ingredient="19"></instruction>
+    <instruction cl="2" ingredient="20"></instruction>
+    <instruction ingredient="14"></instruction>
+    <instruction cl="10" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="11" name="Anitas Love">
+    <instruction cl="4" ingredient="11"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="6" ingredient="9"></instruction>
+    <instruction cl="8" ingredient="3"></instruction>
+  </cocktail>
+  <cocktail id="12" name="Purpur Pineapple">
+    <instruction cl="2" ingredient="21"></instruction>
+    <instruction cl="8" ingredient="5"></instruction>
+    <instruction cl="8" ingredient="15"></instruction>
+  </cocktail>
+  <cocktail id="13" name="Fiesta">
+    <instruction cl="2" ingredient="12"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="3"></instruction>
+  </cocktail>
+  <cocktail id="14" name="Tutti Frutti">
+    <instruction cl="4" ingredient="22"></instruction>
+    <instruction cl="6" ingredient="2"></instruction>
+    <instruction cl="6" ingredient="9"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+  </cocktail>
+  <cocktail id="15" name="Green Almond">
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="2" ingredient="0"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="16" name="Cinderella">
+    <instruction cl="1" ingredient="14"></instruction>
+    <instruction cl="2" ingredient="23"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="17" name="Rubino">
+    <instruction cl="1" ingredient="14"></instruction>
+    <instruction cl="10" ingredient="24"></instruction>
+    <instruction cl="10" ingredient="25"></instruction>
+  </cocktail>
+  <cocktail id="18" name="Pineapple Mix">
+    <instruction cl="12" ingredient="9"></instruction>
+    <instruction cl="6" ingredient="18"></instruction>
+    <instruction ingredient="0"></instruction>
+  </cocktail>
+  <cocktail id="19" name="Strawberry Cup">
+    <instruction ingredient="26"></instruction>
+    <instruction cl="1" ingredient="12"></instruction>
+    <instruction cl="2" ingredient="23"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="15" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="20" name="Athletic">
+    <instruction cl="2" ingredient="7"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="16" ingredient="24"></instruction>
+  </cocktail>
+  <cocktail id="21" name="Bananen-Ananas-Milch">
+    <instruction cl="2" ingredient="11"></instruction>
+    <instruction cl="1" ingredient="27"></instruction>
+    <instruction cl="8" ingredient="9"></instruction>
+    <instruction cl="10" ingredient="28"></instruction>
+  </cocktail>
+  <cocktail id="22" name="Grenadine-Milk">
+    <instruction ingredient="29"></instruction>
+    <instruction cl="2" ingredient="14"></instruction>
+    <instruction cl="15" ingredient="28"></instruction>
+  </cocktail>
+  <cocktail id="23" name="Milkshake">
+    <instruction ingredient="26"></instruction>
+    <instruction ingredient="29"></instruction>
+    <instruction cl="2" ingredient="12"></instruction>
+    <instruction cl="15" ingredient="28"></instruction>
+  </cocktail>
+  <cocktail id="24" name="Coco-Cherry-Milk">
+    <instruction cl="2" ingredient="27"></instruction>
+    <instruction cl="8" ingredient="28"></instruction>
+    <instruction cl="12" ingredient="5"></instruction>
+  </cocktail>
+  <cocktail id="25" name="Jogging Mix">
+    <instruction cl="2" ingredient="4"></instruction>
+    <instruction cl="10" ingredient="24"></instruction>
+    <instruction cl="10" ingredient="28"></instruction>
+  </cocktail>
+  <cocktail id="26" name="Pink Power">
+    <instruction cl="4" ingredient="7"></instruction>
+    <instruction cl="15" ingredient="30"></instruction>
+  </cocktail>
+  <cocktail id="27" name="Pick Me up">
+    <instruction cl="10" ingredient="31"></instruction>
+    <instruction cl="10" ingredient="28"></instruction>
+    <instruction ingredient="19"></instruction>
+    <instruction ingredient="17"></instruction>
+  </cocktail>
+  <cocktail id="28" name="Green Lady">
+    <instruction cl="4" ingredient="17"></instruction>
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="4" ingredient="32"></instruction>
+  </cocktail>
+  <cocktail id="29" name="Flamingo">
+    <instruction cl="2" ingredient="23"></instruction>
+    <instruction cl="2" ingredient="12"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="33"></instruction>
+  </cocktail>
+  <cocktail id="30" name="Red Fruits">
+    <instruction cl="2" ingredient="14"></instruction>
+    <instruction cl="6" ingredient="24"></instruction>
+    <instruction cl="6" ingredient="5"></instruction>
+    <instruction cl="6" ingredient="18"></instruction>
+  </cocktail>
+  <cocktail id="31" name="Mint Cooler">
+    <instruction cl="2" ingredient="34"></instruction>
+    <instruction cl="1" ingredient="17"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="3"></instruction>
+  </cocktail>
+  <cocktail id="32" name="Virgin Mary">
+    <instruction ingredient="35"></instruction>
+    <instruction ingredient="36"></instruction>
+    <instruction ingredient="37"></instruction>
+    <instruction ingredient="38"></instruction>
+    <instruction ingredient="17"></instruction>
+    <instruction cl="20" ingredient="39"></instruction>
+  </cocktail>
+  <cocktail id="33" name="Moon Walker">
+    <instruction cl="5" ingredient="18"></instruction>
+    <instruction cl="5" ingredient="2"></instruction>
+    <instruction cl="5" ingredient="24"></instruction>
+    <instruction cl="5" ingredient="25"></instruction>
+  </cocktail>
+  <cocktail id="34" name="Golden Nugget">
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="2" ingredient="17"></instruction>
+    <instruction cl="12" ingredient="3"></instruction>
+  </cocktail>
+  <cocktail id="35" name="Red Orchid">
+    <instruction cl="2" ingredient="14"></instruction>
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="1" ingredient="17"></instruction>
+    <instruction cl="6" ingredient="33"></instruction>
+    <instruction cl="10" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="36" name="Southside">
+    <instruction cl="2" ingredient="23"></instruction>
+    <instruction cl="2" ingredient="14"></instruction>
+    <instruction cl="16" ingredient="33"></instruction>
+  </cocktail>
+  <cocktail id="37" name="Singapore Sling">
+    <instruction cl="4" ingredient="32"></instruction>
+    <instruction cl="2" ingredient="41"></instruction>
+    <instruction cl="4" ingredient="17"></instruction>
+    <instruction cl="6" ingredient="9"></instruction>
+    <instruction ingredient="42"></instruction>
+  </cocktail>
+  <cocktail id="38" name="Californian">
+    <instruction cl="2" ingredient="20"></instruction>
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="33"></instruction>
+  </cocktail>
+  <cocktail id="39" name="Cocomint">
+    <instruction cl="2" ingredient="23"></instruction>
+    <instruction cl="2" ingredient="34"></instruction>
+    <instruction cl="1" ingredient="17"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="8" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="40" name="Strawberry Daiquiri">
+    <instruction ingredient="43"></instruction>
+    <instruction cl="3" ingredient="17"></instruction>
+    <instruction cl="1" ingredient="12"></instruction>
+    <instruction cl="4" ingredient="44"></instruction>
+  </cocktail>
+  <cocktail id="41" name="Pussy Foot">
+    <instruction cl="2" ingredient="14"></instruction>
+    <instruction cl="6" ingredient="2"></instruction>
+    <instruction cl="6" ingredient="33"></instruction>
+    <instruction cl="6" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="42" name="Baby Colada">
+    <instruction cl="4" ingredient="27"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="16" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="43" name="Blue Passion">
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="2" ingredient="22"></instruction>
+    <instruction cl="16" ingredient="33"></instruction>
+  </cocktail>
+  <cocktail id="44" name="Planter&#39;s Punch">
+    <instruction cl="1" ingredient="14"></instruction>
+    <instruction cl="2" ingredient="17"></instruction>
+    <instruction cl="6" ingredient="2"></instruction>
+    <instruction cl="6" ingredient="9"></instruction>
+    <instruction cl="4" ingredient="44"></instruction>
+  </cocktail>
+  <cocktail id="45" name="Yellow Sun">
+    <instruction cl="2" ingredient="22"></instruction>
+    <instruction cl="6" ingredient="2"></instruction>
+    <instruction cl="6" ingredient="33"></instruction>
+    <instruction cl="6" ingredient="15"></instruction>
+  </cocktail>
+  <cocktail id="46" name="Speedy">
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="6" ingredient="3"></instruction>
+    <instruction cl="6" ingredient="33"></instruction>
+    <instruction cl="6" ingredient="15"></instruction>
+  </cocktail>
+  <cocktail id="47" name="Pina Colada">
+    <instruction cl="1" ingredient="23"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="12" ingredient="9"></instruction>
+    <instruction cl="4" ingredient="44"></instruction>
+  </cocktail>
+  <cocktail id="48" name="Pink Planter">
+    <instruction cl="4" ingredient="44"></instruction>
+    <instruction cl="5" ingredient="15"></instruction>
+    <instruction cl="5" ingredient="5"></instruction>
+    <instruction cl="5" ingredient="33"></instruction>
+  </cocktail>
+  <cocktail id="49" name="Chiquita Punch">
+    <instruction cl="2" ingredient="11"></instruction>
+    <instruction cl="2" ingredient="14"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="14" ingredient="2"></instruction>
+  </cocktail>
+  <cocktail id="50" name="Swimming Pool">
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="2" ingredient="23"></instruction>
+    <instruction cl="2" ingredient="1"></instruction>
+    <instruction cl="14" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="51" name="Crazy Coconut">
+    <instruction cl="2" ingredient="23"></instruction>
+    <instruction cl="6" ingredient="3"></instruction>
+    <instruction cl="6" ingredient="13"></instruction>
+    <instruction cl="6" ingredient="15"></instruction>
+  </cocktail>
+  <cocktail id="52" name="Tropicana">
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="2" ingredient="27"></instruction>
+    <instruction cl="8" ingredient="5"></instruction>
+    <instruction cl="8" ingredient="15"></instruction>
+  </cocktail>
+  <cocktail id="53" name="Caribbean Fruitpunch">
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="2" ingredient="17"></instruction>
+    <instruction cl="6" ingredient="3"></instruction>
+    <instruction cl="6" ingredient="9"></instruction>
+  </cocktail>
+  <cocktail id="54" name="Yellow Fun">
+    <instruction cl="2" ingredient="20"></instruction>
+    <instruction cl="2" ingredient="17"></instruction>
+    <instruction cl="8" ingredient="3"></instruction>
+    <instruction cl="8" ingredient="8"></instruction>
+  </cocktail>
+  <cocktail id="55" name="Grenadine-Spritzer">
+    <instruction cl="4" ingredient="14"></instruction>
+    <instruction ingredient="45"></instruction>
+  </cocktail>
+  <cocktail id="56" name="Summer Collins">
+    <instruction cl="3" ingredient="46"></instruction>
+    <instruction cl="1" ingredient="47"></instruction>
+    <instruction cl="2" ingredient="17"></instruction>
+    <instruction cl="4" ingredient="2"></instruction>
+    <instruction cl="10" ingredient="48"></instruction>
+  </cocktail>
+  <cocktail id="57" name="Apricot Lady">
+    <instruction cl="2" ingredient="49"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="10" ingredient="48"></instruction>
+  </cocktail>
+  <cocktail id="58" name="Crenberry Cooler">
+    <instruction cl="10" ingredient="18"></instruction>
+    <instruction cl="5" ingredient="50"></instruction>
+    <instruction ingredient="17"></instruction>
+    <instruction ingredient="45"></instruction>
+  </cocktail>
+  <cocktail id="59" name="Sparkling Mango">
+    <instruction cl="2" ingredient="20"></instruction>
+    <instruction cl="8" ingredient="3"></instruction>
+    <instruction cl="12" ingredient="51"></instruction>
+  </cocktail>
+  <cocktail id="60" name="Cool Strawberry">
+    <instruction cl="2" ingredient="12"></instruction>
+    <instruction cl="1" ingredient="17"></instruction>
+    <instruction cl="8" ingredient="3"></instruction>
+    <instruction cl="10" ingredient="48"></instruction>
+  </cocktail>
+  <cocktail id="61" name="Kirsche Tonic">
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="10" ingredient="5"></instruction>
+    <instruction ingredient="52"></instruction>
+  </cocktail>
+  <cocktail id="62" name="Tom Collins">
+    <instruction cl="4" ingredient="17"></instruction>
+    <instruction cl="6" ingredient="32"></instruction>
+    <instruction cl="10" ingredient="42"></instruction>
+  </cocktail>
+  <cocktail id="63" name="Summer Cooler">
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="8" ingredient="5"></instruction>
+    <instruction ingredient="53"></instruction>
+  </cocktail>
+  <cocktail id="64" name="Red Angle">
+    <instruction cl="2" ingredient="40"></instruction>
+    <instruction cl="8" ingredient="24"></instruction>
+    <instruction ingredient="48"></instruction>
+  </cocktail>
+  <cocktail id="65" name="Limetten-Spritzer">
+    <instruction cl="4" ingredient="40"></instruction>
+    <instruction ingredient="45"></instruction>
+  </cocktail>
+  <cocktail id="66" name="Azzurro Notte">
+    <instruction cl="2" ingredient="0"></instruction>
+    <instruction cl="2" ingredient="10"></instruction>
+    <instruction cl="4" ingredient="17"></instruction>
+    <instruction ingredient="52"></instruction>
+  </cocktail>
+  <cocktail id="67" name="Pink Dream">
+    <instruction cl="2" ingredient="7"></instruction>
+    <instruction cl="8" ingredient="2"></instruction>
+    <instruction cl="10" ingredient="48"></instruction>
+  </cocktail>
+  <cocktail id="68" name="Yellow Boxer">
+    <instruction cl="2" ingredient="4"></instruction>
+    <instruction cl="2" ingredient="17"></instruction>
+    <instruction cl="10" ingredient="2"></instruction>
+    <instruction cl="10" ingredient="52"></instruction>
+  </cocktail>
+</cocktails>

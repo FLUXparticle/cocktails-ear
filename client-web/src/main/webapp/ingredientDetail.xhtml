@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<f:view>
+    <f:metadata>
+        <f:viewParam name="id" value="#{ingredientDetailBean.id}" />
+        <f:event type="preRenderView" listener="#{ingredientDetailBean.loadIngredient}" />
+    </f:metadata>
+
+    <h:head>
+        <meta charset="UTF-8" />
+        <!-- Dynamischer Titel mit dem Namen der Zutat -->
+        <title>Zutat Details - #{ingredientDetailBean.ingredient.name}</title>
+    </h:head>
+    <h:body>
+        <h3>
+            <h:link value="Cocktails App" outcome="index" /> &gt;
+            <h:link value="Zutaten" outcome="ingredients" /> &gt;
+            <h:outputText value="#{ingredientDetailBean.ingredient.name}" />
+        </h3>
+
+        <h:panelGrid columns="2">
+            <h:outputText value="Name:" />
+            <h:outputText value="#{ingredientDetailBean.ingredient.name}" />
+
+            <h:outputText value="Cocktails mit dieser Zutat:" />
+            <h:dataTable value="#{ingredientDetailBean.cocktails}" var="cocktail">
+                <h:column>
+                    <f:facet name="header">Cocktail Name</f:facet>
+                    <h:link value="#{cocktail.name}" outcome="cocktailDetail">
+                        <f:param name="id" value="#{cocktail.id}" />
+                    </h:link>
+                </h:column>
+            </h:dataTable>
+        </h:panelGrid>
+    </h:body>
+</f:view>
+</html>

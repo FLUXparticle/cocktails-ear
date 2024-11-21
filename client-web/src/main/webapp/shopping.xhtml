@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<f:view>
+    <h:head>
+        <meta charset="UTF-8" />
+        <title>Einkaufsliste</title>
+    </h:head>
+    <h:body>
+        <div>
+            <!-- Breadcrumb Navigation -->
+            <h3>
+                <h:link value="Cocktails App" outcome="index" /> &gt;
+                <h:outputText value="Einkaufsliste" />
+            </h3>
+
+            <!-- Einkaufsliste -->
+            <h4>Einkaufsliste</h4>
+            <h:form>
+                <h:commandButton value="Einkaufsliste leeren" action="#{shoppingBean.clearShoppingList()}" />
+            </h:form>
+            <ul>
+                <ui:repeat value="#{shoppingBean.shoppingList}" var="ingredient">
+                    <li>
+                        #{ingredient}
+                        <h:form style="display:inline;">
+                            <h:commandButton value="Entfernen" action="#{shoppingBean.removeIngredient(ingredient)}" />
+                        </h:form>
+                    </li>
+                </ui:repeat>
+                <h:panelGroup rendered="#{empty shoppingBean.shoppingList}">
+                    <li>Keine Zutaten in der Einkaufsliste.</li>
+                </h:panelGroup>
+            </ul>
+
+            <!-- Liste der nicht möglichen Cocktails -->
+            <h4>Nicht mögliche Cocktails</h4>
+            <ul>
+                <ui:repeat value="#{fridgeBean.cocktailsWithMissingIngredients}" var="model">
+                    <li>
+                        <strong>#{model.cocktailName}</strong>
+                        <ul>
+                            <ui:repeat value="#{model.presentIngredients}" var="ingredient">
+                                <li style="color:green;">#{ingredient}</li>
+                            </ui:repeat>
+                            <ui:repeat value="#{model.missingIngredients}" var="ingredient">
+                                <li style="color:red;">#{ingredient}</li>
+                            </ui:repeat>
+                        </ul>
+                        <h:form>
+                            <h:commandButton value="Fehlende Zutaten hinzufügen"
+                                             action="#{shoppingBean.addIngredients(model.missingIngredients)}" />
+                        </h:form>
+                    </li>
+                </ui:repeat>
+            </ul>
+        </div>
+    </h:body>
+</f:view>
+</html>

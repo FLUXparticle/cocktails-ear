@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <h:head>
+        <meta charset="UTF-8" />
+        <title>Fridge</title>
+    </h:head>
+    <h:body>
+        <h3>
+            <h:link value="Cocktails App" outcome="index" /> &gt; Fridge
+        </h3>
+
+        <h2>In the Fridge</h2>
+        <h:form id="fridgeForm">
+            <h:dataTable value="#{fridgeBean.fridgeIngredients}" var="ingredient">
+                <h:column>
+                    <h:commandButton value="-" action="#{fridgeBean.removeIngredient(ingredient.id)}" />
+                </h:column>
+                <h:column>
+                    <h:link value="#{ingredient.name}" outcome="ingredientDetail">
+                        <f:param name="id" value="#{ingredient.id}" />
+                    </h:link>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+
+        <h2>Not in the Fridge</h2>
+        <h:form id="addFridgeForm">
+            <h:dataTable value="#{fridgeBean.ingredientsNotInFridge}" var="ingredient">
+                <h:column>
+                    <h:commandButton value="+" action="#{fridgeBean.addIngredient(ingredient.id)}" />
+                </h:column>
+                <h:column>
+                    <h:link value="#{ingredient.name}" outcome="ingredientDetail">
+                        <f:param name="id" value="#{ingredient.id}" />
+                    </h:link>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</f:view>
+</html>
