@@ -15,7 +15,7 @@
         <!-- Hibernate-spezifische Einstellungen -->
         <properties>
             <!-- Automatisches Schema-Update (nur für Entwicklung; in Produktion vermeiden) -->
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
             <!-- SQL in der Konsole anzeigen -->
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
