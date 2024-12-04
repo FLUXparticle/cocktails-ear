@@ -1,6 +1,7 @@
 package com.example.cocktails.web.rest;
 
 import com.example.cocktails.cocktail.api.service.*;
+import com.example.cocktails.cocktail.ejb.service.CocktailService;
 import com.example.cocktails.model.entity.*;
 import jakarta.ejb.*;
 import jakarta.ws.rs.*;
@@ -14,7 +15,7 @@ import java.util.*;
 public class CocktailResource {
 
     @EJB
-    private CocktailServiceRemote cocktailService;
+    private CocktailService cocktailService;
 
     @GET
     public Collection<Cocktail> getAllCocktails() {

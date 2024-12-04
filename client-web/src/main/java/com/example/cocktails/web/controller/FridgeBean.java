@@ -2,6 +2,7 @@ package com.example.cocktails.web.controller;
 
 import com.example.cocktails.fridge.api.model.*;
 import com.example.cocktails.fridge.api.service.*;
+import com.example.cocktails.fridge.ejb.service.FridgeService;
 import com.example.cocktails.model.entity.*;
 import jakarta.ejb.*;
 import jakarta.enterprise.context.*;
@@ -15,7 +16,7 @@ import java.util.*;
 public class FridgeBean implements Serializable {
 
     @EJB
-    private FridgeServiceRemote fridgeService;
+    private FridgeService fridgeService;
 
     // Hinzufügen einer Zutat zum Kühlschrank
     public void addIngredient(Long ingredientId) {

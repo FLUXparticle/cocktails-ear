@@ -1,6 +1,7 @@
 package com.example.cocktails.fridge.ejb.service;
 
 import com.example.cocktails.cocktail.api.service.*;
+import com.example.cocktails.cocktail.ejb.service.CocktailService;
 import com.example.cocktails.model.entity.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.*;
@@ -16,7 +17,7 @@ import static org.mockito.Mockito.*;
 public class FridgeServiceMockitoTest {
 
     @Mock
-    private CocktailServiceRemote cocktailService;
+    private CocktailService cocktailService;
 
     @InjectMocks
     private FridgeService fridgeService;

@@ -1,6 +1,7 @@
 package com.example.cocktails.service;
 
 import com.example.cocktails.cocktail.api.service.*;
+import com.example.cocktails.cocktail.ejb.service.CocktailService;
 import com.example.cocktails.model.entity.*;
 import jakarta.ejb.*;
 import org.jboss.arquillian.container.test.api.*;
@@ -19,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CocktailServiceArquillianTest {
 
     @EJB
-    private CocktailServiceRemote cocktailService;
+    private CocktailService cocktailService;
 
     @Deployment
     public static JavaArchive createDeployment() {
