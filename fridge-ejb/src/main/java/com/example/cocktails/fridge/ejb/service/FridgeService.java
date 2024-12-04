@@ -1,20 +1,26 @@
 package com.example.cocktails.fridge.ejb.service;
 
-import com.example.cocktails.cocktail.ejb.service.*;
-import com.example.cocktails.fridge.api.model.*;
-import com.example.cocktails.model.entity.*;
-import jakarta.ejb.*;
+import com.example.cocktails.cocktail.api.service.CocktailServiceRemote;
+import com.example.cocktails.fridge.api.model.ShoppingModel;
+import com.example.cocktails.fridge.api.service.FridgeServiceRemote;
+import com.example.cocktails.model.entity.Cocktail;
+import com.example.cocktails.model.entity.Ingredient;
+import com.example.cocktails.model.entity.Instruction;
+import jakarta.ejb.EJB;
+import jakarta.ejb.Remote;
+import jakarta.ejb.Stateful;
 
 import java.util.*;
-import java.util.stream.*;
+import java.util.stream.Collectors;
 
 @Stateful
-public class FridgeService {
+@Remote(FridgeServiceRemote.class)
+public class FridgeService implements FridgeServiceRemote {
 
     private final Set<Ingredient> fridgeIngredients = new HashSet<>();
 
     @EJB
-    private CocktailService cocktailService;
+    private CocktailServiceRemote cocktailService;
 
     public Set<Ingredient> getFridgeIngredients() {
         return fridgeIngredients;

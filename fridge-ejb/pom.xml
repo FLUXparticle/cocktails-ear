@@ -26,8 +26,9 @@
         <!-- Abhängigkeit zum Cocktail-Modul -->
         <dependency>
             <groupId>com.example.cocktails</groupId>
-            <artifactId>cocktail-ejb</artifactId>
+            <artifactId>cocktail-api</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- EJB API -->

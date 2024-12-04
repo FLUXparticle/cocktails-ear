@@ -1,13 +1,12 @@
 package com.example.cocktails.web.rest;
 
-import com.example.cocktails.cocktail.api.service.*;
-import com.example.cocktails.cocktail.ejb.service.CocktailService;
-import com.example.cocktails.model.entity.*;
-import jakarta.ejb.*;
+import com.example.cocktails.cocktail.api.service.CocktailServiceRemote;
+import com.example.cocktails.model.entity.Cocktail;
+import jakarta.ejb.EJB;
 import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.*;
+import jakarta.ws.rs.core.MediaType;
 
-import java.util.*;
+import java.util.Collection;
 
 @Path("/cocktails")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -15,7 +14,7 @@ import java.util.*;
 public class CocktailResource {
 
     @EJB
-    private CocktailService cocktailService;
+    private CocktailServiceRemote cocktailService;
 
     @GET
     public Collection<Cocktail> getAllCocktails() {

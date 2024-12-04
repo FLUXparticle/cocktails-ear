@@ -1,21 +1,21 @@
 package com.example.cocktails.web.controller;
 
-import com.example.cocktails.cocktail.api.service.*;
-import com.example.cocktails.cocktail.ejb.service.CocktailService;
-import com.example.cocktails.model.entity.*;
-import jakarta.ejb.*;
-import jakarta.enterprise.context.*;
-import jakarta.inject.*;
+import com.example.cocktails.cocktail.api.service.CocktailServiceRemote;
+import com.example.cocktails.model.entity.Cocktail;
+import com.example.cocktails.model.entity.Ingredient;
+import jakarta.ejb.EJB;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Named;
 
-import java.io.*;
-import java.util.*;
+import java.io.Serializable;
+import java.util.Collection;
 
 @Named
 @RequestScoped
 public class IngredientDetailBean implements Serializable {
 
     @EJB
-    private CocktailService cocktailService;
+    private CocktailServiceRemote cocktailService;
 
     private Long id;
     private Ingredient ingredient;

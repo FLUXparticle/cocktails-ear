@@ -1,19 +1,19 @@
 package com.example.cocktails.web.controller;
 
-import com.example.cocktails.cocktail.ejb.service.*;
-import com.example.cocktails.model.entity.*;
-import jakarta.ejb.*;
-import jakarta.enterprise.context.*;
-import jakarta.inject.*;
+import com.example.cocktails.cocktail.api.service.CocktailServiceRemote;
+import com.example.cocktails.model.entity.Cocktail;
+import jakarta.ejb.EJB;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Named;
 
-import java.util.*;
+import java.util.Collection;
 
 @Named
 @RequestScoped
 public class CocktailBean {
 
     @EJB
-    private CocktailService cocktailService;
+    private CocktailServiceRemote cocktailService;
 
     private Collection<Cocktail> cocktails;
 

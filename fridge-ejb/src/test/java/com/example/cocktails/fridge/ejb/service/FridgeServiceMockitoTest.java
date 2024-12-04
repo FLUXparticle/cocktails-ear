@@ -1,23 +1,28 @@
 package com.example.cocktails.fridge.ejb.service;
 
-import com.example.cocktails.cocktail.api.service.*;
-import com.example.cocktails.cocktail.ejb.service.CocktailService;
-import com.example.cocktails.model.entity.*;
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.*;
-import org.mockito.*;
-import org.mockito.junit.jupiter.*;
+import com.example.cocktails.cocktail.api.service.CocktailServiceRemote;
+import com.example.cocktails.model.entity.Cocktail;
+import com.example.cocktails.model.entity.Ingredient;
+import com.example.cocktails.model.entity.Instruction;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.*;
+import java.util.List;
+import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class FridgeServiceMockitoTest {
 
     @Mock
-    private CocktailService cocktailService;
+    private CocktailServiceRemote cocktailService;
 
     @InjectMocks
     private FridgeService fridgeService;

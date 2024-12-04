@@ -19,13 +19,15 @@
         <!-- Abhängigkeiten zu API-Modules -->
         <dependency>
             <groupId>com.example.cocktails</groupId>
-            <artifactId>cocktail-ejb</artifactId>
+            <artifactId>cocktail-api</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.example.cocktails</groupId>
-            <artifactId>fridge-ejb</artifactId>
+            <artifactId>fridge-api</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- JSF API -->

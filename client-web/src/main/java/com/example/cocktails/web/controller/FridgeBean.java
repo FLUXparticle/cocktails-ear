@@ -1,22 +1,23 @@
 package com.example.cocktails.web.controller;
 
-import com.example.cocktails.fridge.api.model.*;
-import com.example.cocktails.fridge.api.service.*;
-import com.example.cocktails.fridge.ejb.service.FridgeService;
-import com.example.cocktails.model.entity.*;
-import jakarta.ejb.*;
-import jakarta.enterprise.context.*;
-import jakarta.inject.*;
+import com.example.cocktails.fridge.api.model.ShoppingModel;
+import com.example.cocktails.fridge.api.service.FridgeServiceRemote;
+import com.example.cocktails.model.entity.Cocktail;
+import com.example.cocktails.model.entity.Ingredient;
+import jakarta.ejb.EJB;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.inject.Named;
 
-import java.io.*;
-import java.util.*;
+import java.io.Serializable;
+import java.util.List;
+import java.util.Set;
 
 @Named
 @SessionScoped
 public class FridgeBean implements Serializable {
 
     @EJB
-    private FridgeService fridgeService;
+    private FridgeServiceRemote fridgeService;
 
     // Hinzufügen einer Zutat zum Kühlschrank
     public void addIngredient(Long ingredientId) {
