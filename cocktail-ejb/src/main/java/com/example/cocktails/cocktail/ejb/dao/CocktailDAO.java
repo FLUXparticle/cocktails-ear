@@ -1,12 +1,14 @@
 package com.example.cocktails.cocktail.ejb.dao;
 
-import com.example.cocktails.model.entity.*;
-import jakarta.ejb.*;
-import jakarta.persistence.*;
+import com.example.cocktails.model.entity.Cocktail;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.TypedQuery;
 
-import java.util.*;
+import java.util.Collection;
 
-@Stateless
+@ApplicationScoped
 public class CocktailDAO {
 
     @PersistenceContext(unitName = "CocktailPU")
@@ -24,7 +26,11 @@ public class CocktailDAO {
     }
 
     public Cocktail findById(Long id) {
-        return em.find(Cocktail.class, id);
+        // return em.find(Cocktail.class, id);
+        // Eager Query
+        TypedQuery<Cocktail> q = em.createQuery("SELECT c FROM Cocktail c JOIN FETCH c.instructions JOIN FETCH c.instructions.ingredient WHERE c.id = :cocktailID", Cocktail.class);
+        q.setParameter("cocktailID", id);
+        return q.getSingleResult();
     }
 
     public void save(Cocktail cocktail) {

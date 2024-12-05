@@ -1,10 +1,16 @@
 package com.example.cocktails.model.entity;
 
 import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
-import java.io.*;
-import java.util.*;
+import java.io.PrintWriter;
+import java.io.Serializable;
+import java.io.StringWriter;
+import java.util.Collection;
+import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "cocktails")
@@ -21,7 +27,7 @@ public class Cocktail implements Comparable<Cocktail>, Serializable {
     @XmlAttribute
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "cocktail_id")
     @XmlElement(name = "instruction")
     private Collection<Instruction> instructions;

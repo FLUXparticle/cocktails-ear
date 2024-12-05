@@ -23,10 +23,18 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!-- CDI API -->
+        <dependency>
+            <groupId>jakarta.enterprise</groupId>
+            <artifactId>jakarta.enterprise.cdi-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Annotation API -->
         <dependency>
             <groupId>jakarta.annotation</groupId>
             <artifactId>jakarta.annotation-api</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <!-- EJB API -->
@@ -75,7 +83,8 @@
         <!-- Wildfly Arquillian Container -->
         <dependency>
             <groupId>org.wildfly.arquillian</groupId>
-            <artifactId>wildfly-arquillian-container-managed</artifactId>
+            <artifactId>wildfly-arquillian-container-embedded</artifactId>
+            <version>5.0.1.Final</version>
             <scope>test</scope>
         </dependency>
 

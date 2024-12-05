@@ -9,6 +9,7 @@ import com.example.cocktails.model.entity.Instruction;
 import jakarta.ejb.EJB;
 import jakarta.ejb.Remote;
 import jakarta.ejb.Stateless;
+import jakarta.inject.Inject;
 
 import java.util.*;
 
@@ -16,7 +17,7 @@ import java.util.*;
 @Remote(CocktailServiceRemote.class)
 public class CocktailService implements CocktailServiceRemote {
 
-    @EJB
+    @Inject
     private CocktailDAO cocktailDAO;
 
     @EJB
@@ -35,7 +36,9 @@ public class CocktailService implements CocktailServiceRemote {
     }
 
     public Cocktail getCocktail(Long id) {
-        return cocktailDAO.findById(id);
+        Cocktail cocktail = cocktailDAO.findById(id);
+        cocktail.getInstructions().size();
+        return cocktail;
     }
 
     public Ingredient getIngredient(Long id) {

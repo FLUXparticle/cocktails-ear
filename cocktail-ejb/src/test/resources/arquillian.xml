@@ -3,9 +3,9 @@
             xsi:schemaLocation="http://jboss.org/schema/arquillian
             http://jboss.org/schema/arquillian/arquillian-1.0.xsd">
 
-    <container qualifier="wildfly-managed" default="true">
+    <container qualifier="wildfly-embedded" default="true">
         <configuration>
-            <property name="jbossHome">/opt/homebrew/opt/wildfly-as/libexec</property>
+            <!--property name="jbossHome">C:/Users/ITS-Admin/IdeaProjects/cocktails-ear/cocktail-ear/target/server</property-->
             <property name="enableDebug">true</property>
         </configuration>
     </container>
