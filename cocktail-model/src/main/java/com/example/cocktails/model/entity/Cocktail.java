@@ -15,7 +15,15 @@ import java.util.Objects;
 @Entity
 @Table(name = "cocktails")
 @XmlRootElement(name = "cocktail")
+@NamedQueries({
+    @NamedQuery(
+            name = Cocktail.EAGER_INSTRUCTIONS,
+            query = "SELECT c FROM Cocktail c JOIN FETCH c.instructions JOIN FETCH c.instructions.ingredient WHERE c.id = :cocktailID"
+    )
+})
 public class Cocktail implements Comparable<Cocktail>, Serializable {
+
+    public static final String EAGER_INSTRUCTIONS = "eagerInstructions";
 
     @Id
     @Column(name = "cocktail_id")

@@ -28,7 +28,7 @@ public class CocktailDAO {
     public Cocktail findById(Long id) {
         // return em.find(Cocktail.class, id);
         // Eager Query
-        TypedQuery<Cocktail> q = em.createQuery("SELECT c FROM Cocktail c JOIN FETCH c.instructions JOIN FETCH c.instructions.ingredient WHERE c.id = :cocktailID", Cocktail.class);
+        TypedQuery<Cocktail> q = em.createNamedQuery(Cocktail.EAGER_INSTRUCTIONS, Cocktail.class);
         q.setParameter("cocktailID", id);
         return q.getSingleResult();
     }
